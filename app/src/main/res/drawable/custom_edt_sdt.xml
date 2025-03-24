@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the view is pressed -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Bo hết góc -->
+            <stroke android:width="2dp" android:color="#0068ff" /> <!-- Blue border when pressed -->
+        </shape>
+    </item>
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Bo hết góc -->
+            <solid android:color="#00000000" />
+            <stroke android:width="2dp" android:color="#0068ff" /><!-- Transparent background -->
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,383 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context=".CaNhan.DuLieuTrenMay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quaylai"
+            android:background="@null"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Dữ liệu trên máy"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctDuLieuZalotest"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:progressDrawable="@drawable/custom_progress"
+                    android:thumb="@drawable/transparent_thumb"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+
+                    <ImageView
+                        android:id="@+id/imgZalotest1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="#050D95"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtZalotest"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtZalotest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Zalotest"
+                        android:textColor="@color/xam"
+                        app:layout_constraintStart_toEndOf="@+id/imgZalotest1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgZalotest2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="15dp"
+                        android:background="#4186DA"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtZalotest"
+                        app:layout_constraintStart_toEndOf="@+id/txtZalotest"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtUngDungKhac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/xam"
+                        android:text="Ứng dụng khác"
+                        app:layout_constraintStart_toEndOf="@+id/imgZalotest2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgZalotest3"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="#e0e0e0"
+                        android:layout_marginStart="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/custom_btn_chon_ngon_ngu"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtUngDungKhac"
+                        app:layout_constraintStart_toEndOf="@+id/txtUngDungKhac"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Trống"
+                        android:textColor="@color/xam"
+                        app:layout_constraintStart_toEndOf="@+id/imgZalotest3"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/txtDuLieuZalotest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dữ liệu Zalotest"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtZalotest"/>
+
+                    <TextView
+                        android:id="@+id/txtBoNho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,85 GB"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtDuLieuZalotest"/>
+
+                    <TextView
+                        android:id="@+id/txtDungLuongDT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chiếm dụng 3.76% dung lượng điện thoại"
+                        android:textColor="@color/xam"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtBoNho"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctBoNhoDem"
+                android:background="#ffffff"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/ctDuLieuZalotest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtBoNhoDem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bộ nhớ đệm  1,39GB"
+                    android:textSize="17dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtDuLieuTamThoi"
+                    android:text="Dữ liệu tạm thời được sinh ra khi dùng Zalotest. Dọn dẹp bộ nhớ đệm không ảnh hưởng đến các trò chuyện"
+                    android:textColor="@color/xam"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBoNhoDem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnDonDepBoNho"
+                    android:layout_marginTop="10dp"
+                    android:text="Dọn dẹp bộ nhớ đệm"
+                    android:textColor="#0E2CC1"
+                    android:backgroundTint="#9CB8D8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDuLieuTamThoi" />
+
+                <TextView
+                    android:id="@+id/txtAnh"
+                    android:textSize="16dp"
+                    android:text="Ảnh, video, file lớn hơn 5 MB"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnDonDepBoNho" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2,91 GB"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/xam"
+                    app:layout_constraintStart_toEndOf="@+id/txtAnh"
+                    app:layout_constraintTop_toBottomOf="@+id/btnDonDepBoNho"/>
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:src="@drawable/android"
+                    android:scaleType="centerCrop"
+                    android:layout_width="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="70dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAnh" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/android"
+                    app:layout_constraintStart_toEndOf="@+id/img1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAnh" />
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/android"
+                    app:layout_constraintStart_toEndOf="@+id/img2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAnh" />
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/android"
+                    app:layout_constraintStart_toEndOf="@+id/img3"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAnh" />
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="3dp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/xam"
+                    app:layout_constraintStart_toEndOf="@+id/img4"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAnh" />
+
+                <TextView
+                    android:id="@+id/txtSoAnh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+210"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/img5"
+                    app:layout_constraintEnd_toEndOf="@+id/img5"
+                    app:layout_constraintStart_toStartOf="@+id/img5"
+                    app:layout_constraintTop_toTopOf="@+id/img5" />
+
+                <Button
+                    android:id="@+id/btnXemVaDonDepXanh"
+                    android:layout_marginTop="10dp"
+                    android:text="Xem và dọn dẹp"
+                    android:textColor="#0E2CC1"
+                    android:backgroundTint="#9CB8D8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img1"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctDuLieuTroChuyen"
+                app:layout_constraintTop_toBottomOf="@+id/ctBoNhoDem"
+                android:layout_marginTop="1dp"
+                android:padding="15dp"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtDuLieuTroChuyen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dữ liệu trò chuyện"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="6,96 GB"
+                    android:textColor="@color/xam"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/txtDuLieuTroChuyen"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtCacTinNhan"
+                    android:text="Các tin nhắn văn bản, ảnh, video, tin nhắn thoại và file của bạn trên Zalotest"
+                    android:textColor="@color/xam"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDuLieuTroChuyen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnXemVaDonDepXam"
+                    android:layout_marginTop="10dp"
+                    android:text="Xem và dọn dẹp"
+                    android:textColor="#000000"
+                    android:backgroundTint="#D5D9DD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCacTinNhan"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctDuLieuKhac"
+                app:layout_constraintTop_toBottomOf="@+id/ctDuLieuTroChuyen"
+                android:layout_marginTop="1dp"
+                android:padding="15dp"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtDulieuKhac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dữ liệu trò chuyện"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:text="Gồm kích thước ứng dụng Zalotest (không thể xóa) và các dữ liệu từ các tài khoản Zalotest khác trên máy này"
+                    android:textColor="@color/xam"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDulieuKhac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

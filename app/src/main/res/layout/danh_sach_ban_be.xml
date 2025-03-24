@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lyoTinNhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgAVT"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:src="@drawable/avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTenBanBe"
+            android:layout_width="230dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:text="Ten Ban Be"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgAVT"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTinNhan"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Tin nhắn"
+            android:textColor="@color/xam"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/imgAVT"
+            app:layout_constraintTop_toBottomOf="@+id/txtTenBanBe"/>
+
+        <TextView
+            android:id="@+id/txtGioHD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="12 giờ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imgTNMoi"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/custom_thong_bao_tn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtTenBanBe" />
+
+        <ImageView
+            android:id="@+id/imgTatThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tatchuong"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/txtGioHD"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

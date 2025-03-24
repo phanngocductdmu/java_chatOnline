@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "281312664739",
+    "project_id": "zalotest-23948",
+    "storage_bucket": "zalotest-23948.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281312664739:android:57b4fb0089506b37843316",
+        "android_client_info": {
+          "package_name": "com.example.zalotest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuh1l83Vj9wARB-N-cPXl3YvE2QaKCxkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

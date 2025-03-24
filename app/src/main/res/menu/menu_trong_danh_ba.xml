@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/idTatCa"
+        android:title="Tất cả 200"
+        android:titleTextAppearance="@color/xam" />
+    <item
+        android:id="@+id/idMoiTruyCap"
+        android:title="Mới truy cập"
+        android:titleTextAppearance="@color/xam" />
+</menu>

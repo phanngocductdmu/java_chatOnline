@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_ThemBan"
+        android:title="Thêm bạn"/>
+    <item
+        android:id="@+id/menu_item_TaoNhom"
+        android:title="Tạo nhóm"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_item_CloudCuaToi"
+        android:title="Cloud của tôi"
+
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_LichZalotest"
+        android:icon="@drawable/setting"
+        android:title="Lịch Zalotest"/>
+    <item
+        android:id="@+id/menu_item_TaoCuocGoiNhom"
+        android:title="Tạo cuộc gọi nhóm" />
+    <item
+        android:id="@+id/menu_item_ThietBiDangNhap"
+        android:title="Thiết bị đăng nhập" />
+</menu>

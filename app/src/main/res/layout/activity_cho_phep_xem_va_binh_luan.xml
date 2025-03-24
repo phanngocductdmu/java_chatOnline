@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#f0f0f0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaNhan.Setting.QuyenRiengTu.ChoPhepXemVaBinhLuan">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quaylai"
+            android:background="@null"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Cho phép xem và bình luận"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtTienIch"
+        android:padding="15dp"
+        android:text="Cho phép bạn bè xem bài đăng"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:textColor="#1B2EA5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/txtToanBoBaiDang"
+        android:text="Toàn bộ bài đăng"
+        android:textSize="18dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtTienIch"/>
+
+    <TextView
+        android:id="@+id/txt6Thang"
+        android:text="Trong 6 tháng gần nhất"
+        android:textSize="18dp"
+        android:layout_marginTop="1dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtToanBoBaiDang"/>
+
+    <TextView
+        android:id="@+id/txt1Thang"
+        android:text="Trong 1 tháng gần nhất"
+        android:textSize="18dp"
+        android:layout_marginTop="1dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt6Thang"/>
+
+    <TextView
+        android:id="@+id/txt7Thang"
+        android:text="Trong 7 tháng gần nhất"
+        android:textSize="18dp"
+        android:layout_marginTop="1dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt1Thang"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctTuyChinh"
+        app:layout_constraintTop_toBottomOf="@+id/txt7Thang"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTuyChinh"
+            android:text="Tùy chỉnh"
+            android:textSize="18dp"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/xam"
+            android:text="Bấm chọn khoảng thời gian"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTuyChinh" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

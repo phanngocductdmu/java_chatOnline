@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/idTinNhan" android:title="Tin nhắn" android:icon="@drawable/un_message"/>
+    <item android:id="@+id/idDanhBa" android:title="Danh bạ" android:icon="@drawable/un_danhba"/>
+    <item android:id="@+id/idKhamPha" android:title="Khám phá" android:icon="@drawable/un_khampha"/>
+    <item android:id="@+id/idNhatKy" android:title="Nhật ký" android:icon="@drawable/un_nhatky"/>
+    <item android:id="@+id/idCaNhan" android:title="Cá nhân" android:icon="@drawable/un_user"/>
+</menu>

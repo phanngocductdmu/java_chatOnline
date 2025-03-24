@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#f0f0f0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaNhan.Setting.QuyenRiengTu.SinhNhat">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quaylai"
+            android:background="@null"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Sinh nhật"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtHienNgaySinh"
+            android:padding="15dp"
+            android:text="Hiện ngày sinh"
+            android:textSize="16dp"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:textColor="#1B2EA5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtKoHien"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:text="Không hiện"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtHienNgaySinh"/>
+
+        <TextView
+            android:id="@+id/txtHienDayDu"
+            android:padding="15dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:text="Hiện đầy đủ ngày, tháng, năm"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtKoHien"/>
+
+        <TextView
+            android:id="@+id/txtChiHienNgayThang"
+            android:padding="15dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:text="Chỉ hiện ngày, tháng"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtHienDayDu"/>
+
+        <TextView
+            android:id="@+id/txtThongBao"
+            android:padding="15dp"
+            android:text="Thông báo"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:textColor="#1B2EA5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtChiHienNgayThang"/>
+
+        <TextView
+            android:id="@+id/txtBaoChoBanBe"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:text="Báo cho bạn bè về sinh nhật của tôi"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtThongBao"/>\
+
+
+        <Switch
+            android:id="@+id/swThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtBaoChoBanBe"
+            app:layout_constraintEnd_toEndOf="@+id/txtBaoChoBanBe"
+            app:layout_constraintTop_toBottomOf="@+id/txtThongBao"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
